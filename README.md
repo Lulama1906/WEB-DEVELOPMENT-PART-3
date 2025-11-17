@@ -6,7 +6,7 @@ This project is a responsive, multi‑page website for **The Muffin & Scone Co.*
 
 Each page has its own dedicated HTML, CSS, and JavaScript file to ensure modularity, maintainability, and clarity.
 
----
+
 
 ## 🗂️ Project Structure
 project-root/ │ ├── index.html ├── about.html ├── products.html ├── enquiry.html ├── contact.html │ ├── css/ │ ├── style.css # Global styles for index │ ├── about.css # About page styles │ ├── products.css # Products page styles │ ├── enquiry.css # Enquiry page styles │ └── contact.css # Contact page styles │ ├── js/ │ ├── index.js # Index page scripts │ ├── about.js # About page scripts │ ├── products.js # Products page scripts (cart logic) │ ├── enquiry.js # Enquiry page scripts (form validation) │ └── contact.js # Contact page scripts (form validation) │ └── images/ # All site images
