@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — The Muffin & Scone Co.</title>
+  <link rel="stylesheet" href="css/contact.css" />
+  <script defer src="js/contact.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div>
+      <a href="index.html">🍞 The Muffin & Scone Co.</a>
+      <nav aria-label="Primary">
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach us at our bakeries or send us a message below.</p>
+
+    <!-- Locations -->
+    <section class="locations">
+      <article>
+        <h2>Johannesburg</h2>
+        <p>123 Baker Street, Johannesburg</p>
+        <div class="map">
+          <iframe src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen></iframe>
+        </div>
+      </article>
+      <article>
+        <h2>Sandton</h2>
+        <p>45 Pastry Avenue, Sandton</p>
+        <div class="map">
+          <iframe src="https://maps.google.com/maps?q=Sandton&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen></iframe>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Email: <a href="mailto:hello@sweetrise.example">hello@sweetrise.example</a></p>
+      <p>Phone: <a href="tel:+27123456789">+27 11 555 0123</a></p>
+    </section>
+
+    <!-- Hours -->
+    <section class="hours">
+      <h2>Business Hours</h2>
+      <ul>
+        <li>Mon – Sat: 7:00 – 17:00</li>
+        <li>Sun: Closed</li>
+      </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send us a Message</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name
+          <input id="name" name="name" type="text" required />
+        </label>
+        <label for="email">Email
+          <input id="email" name="email" type="email" required />
+        </label>
+        <label for="message">Message
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+        <p role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <p>© <span id="year"></span> The Muffin & Scone Co.</p>
+      <p><span id="datetime"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

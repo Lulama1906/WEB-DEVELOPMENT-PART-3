@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: #fffaf5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+}
+header a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+nav a {
+  color: #fff;
+}
+nav a:hover,
+nav a.active {
+  color: #f4b400;
+  border-bottom: 2px solid #f4b400;
+}
+
+/* Main */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+/* Locations */
+.locations {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.locations article {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.locations h2 {
+  margin-bottom: 0.5rem;
+  color: #f4b400;
+}
+.map {
+  margin-top: 1rem;
+}
+
+/* Contact info */
+.contact-info {
+  margin: 2rem 0;
+}
+.contact-info h2 {
+  margin-bottom: 0.5rem;
+  color: #f4b400;
+}
+
+/* Hours */
+.hours {
+  margin: 2rem 0;
+}
+.hours h2 {
+  margin-bottom: 0.5rem;
+  color: #f4b400;
+}
+.hours ul {
+  list-style: none;
+  padding-left: 0;
+}
+.hours li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact form */
+.contact-form {
+  margin: 2rem 0;
+}
+.contact-form h2 {
+  margin-bottom: 1rem;
+  color: #f4b400;
+}
+.contact-form form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: grid;
+  gap: 1rem;
+}
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  margin-top: 0.25rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f4b400;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(244,180,0,0.3);
+}
+.contact-form button {
+  background: #f4b400;
+  color: #222;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.contact-form button:hover {
+  background: #d99a00;
+}
+.contact-form p[role="status"] {
+  font-weight: bold;
+}
+.contact-form p.error {
+  color: red;
+}
+.contact-form p.success {
+  color: green;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  border-top: 3px solid #f4b400;
+}
+footer a {
+  color: #f4b400;
+}

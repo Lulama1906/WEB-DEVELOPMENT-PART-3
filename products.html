@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products — The Muffin & Scone Co.</title>
+  <link rel="stylesheet" href="css/products.css" />
+  <script defer src="js/products.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div>
+      <a href="index.html">🍞 The Muffin & Scone Co.</a>
+      <nav aria-label="Primary">
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <h1>Our Products</h1>
+
+    <!-- Muffins & Scones -->
+    <section>
+      <h2>Muffins & Scones</h2>
+      <div class="grid">
+        <article>
+          <img src="images/Chocolate chip muffins.jpg" alt="Chocolate chip muffins" />
+          <h3>Chocolate Chip Muffins</h3>
+          <p>Fluffy muffin studded with Belgian chocolate chips.</p>
+          <p class="price" data-price="28">R28.00 each</p>
+          <button>Add to cart</button>
+        </article>
+        <article>
+          <img src="images/Blueberry muffins.jpg" alt="Blueberry scones" />
+          <h3>Blueberry Scones</h3>
+          <p>Buttery scones filled with fresh blueberries.</p>
+          <p class="price" data-price="22">R22.00 each</p>
+          <button>Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Drinks -->
+    <section>
+      <h2>Drinks</h2>
+      <div class="grid">
+        <article>
+          <img src="images/Iced latte.jpg" alt="Iced latte" />
+          <h3>Iced Latte</h3>
+          <p>Espresso with cold milk and ice.</p>
+          <p class="price" data-price="40">R40.00</p>
+          <button>Add to cart</button>
+        </article>
+        <article>
+          <img src="images/cappuccino.jpg" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>Espresso, steamed milk, and foamed milk.</p>
+          <p class="price" data-price="32">R32.00</p>
+          <button>Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Combos -->
+    <section>
+      <h2>Combos</h2>
+      <div class="grid">
+        <article>
+          <img src="images/Coffee+muffins.jpg" alt="Coffee and muffin combo" />
+          <h3>Coffee + Muffin</h3>
+          <p>Any muffin paired with a hot coffee.</p>
+          <p class="price" data-price="50">R50.00</p>
+          <button>Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cakes -->
+    <section>
+      <h2>Cakes — Choose Size & Flavour</h2>
+      <div class="cakes-layout">
+        <div class="cakes-grid">
+          <article>
+            <img src="images/cakes.jpg" alt="Custom cake" />
+            <h3>Custom Cake</h3>
+            <p>Pick your flavour and size. Add a custom message.</p>
+            <form id="cakeForm">
+              <label for="flavour-custom">Flavour:</label>
+              <select id="flavour-custom">
+                <option>Vanilla</option>
+                <option>Chocolate</option>
+                <option>Red Velvet</option>
+                <option>Carrot</option>
+              </select>
+
+              <label for="size-custom">Size:</label>
+              <select id="size-custom">
+                <option value="150">Small — R150</option>
+                <option value="250">Medium — R250</option>
+                <option value="400">Large — R400</option>
+              </select>
+
+              <label for="message-custom">Custom Message:</label>
+              <input type="text" id="message-custom" maxlength="30" placeholder="Happy Birthday!" />
+
+              <button type="submit">Add to cart</button>
+            </form>
+          </article>
+        </div>
+
+        <!-- Cart Sidebar -->
+        <aside>
+          <h2>Cart Summary</h2>
+          <ul id="cart-items"></ul>
+          <p id="cart-total">Total: R0.00</p>
+          <button id="checkout-btn">Proceed to Enquiry</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <p>© <span id="year"></span> The Muffin & Scone Co.</p>
+      <p><span id="datetime"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

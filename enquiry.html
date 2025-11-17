@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enquiry — The Muffin & Scone Co.</title>
+  <link rel="stylesheet" href="css/enquiry.css" />
+  <script defer src="js/enquiry.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div>
+      <a href="index.html">🍞 The Muffin & Scone Co.</a>
+      <nav aria-label="Primary">
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html" class="active">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <h1>Product / Catering Enquiry</h1>
+    <p>Send us your request. We’ll reply within 1 business day.</p>
+
+    <form id="enquiryForm" novalidate>
+      <!-- Personal details -->
+      <fieldset class="two-column">
+        <label for="firstName">First Name
+          <input required id="firstName" name="firstName" type="text" placeholder="Alice" />
+        </label>
+
+        <label for="lastName">Last Name
+          <input required id="lastName" name="lastName" type="text" placeholder="Smith" />
+        </label>
+      </fieldset>
+
+      <!-- Contact details -->
+      <fieldset class="two-column">
+        <label for="email">Email
+          <input required id="email" name="email" type="email" placeholder="you@example.com" />
+        </label>
+
+        <label for="phone">Phone
+          <input id="phone" name="phone" type="tel" placeholder="+27" />
+        </label>
+      </fieldset>
+
+      <!-- Enquiry type -->
+      <fieldset>
+        <label for="type">Enquiry Type
+          <select id="type" name="type" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="general">General Product Enquiry</option>
+            <option value="catering">Catering / Events</option>
+            <option value="bulk">Bulk Order (Wholesale)</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <!-- Message -->
+      <fieldset>
+        <label for="message">Message
+          <textarea required id="message" name="message" rows="6" placeholder="Tell us what you need — items, quantities, date…"></textarea>
+        </label>
+      </fieldset>
+
+      <!-- Optional cart summary -->
+      <fieldset>
+        <label for="cart">Cart Summary (optional)
+          <textarea id="cart" name="cart" rows="4" placeholder="Auto-filled if you added items on the Products page"></textarea>
+        </label>
+        <button type="reset">Clear cart</button>
+      </fieldset>
+
+      <!-- Submit -->
+      <button type="submit">Send Enquiry</button>
+      <p role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+   <footer>
+  <div>
+    <p>© <span id="year"></span> The Muffin & Scone Co. • Open Mon–Sat 7:00–17:00</p>
+    <p>
+      <a href="mailto:hello@sweetrise.example">hello@sweetrise.example</a> · 
+      <a href="tel:+27123456789">+27 11 555 0123</a>
+    </p>
+    <p><span id="datetime"></span></p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

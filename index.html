@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Muffin & Scone Co. — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">🍞 The Muffin & Scone Co.</a>
+      <nav class="nav" aria-label="Primary">
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="nav__toggle-label">☰</label>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-wrapper">
+    <section class="hero fade-in">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Freshly Baked Every Morning</h1>
+          <p>Hand‑crafted <strong>muffins</strong>, crumbly <strong>scones</strong>, and delightful <strong>cakes</strong> made with simple ingredients.</p>
+          <a class="btn" href="products.html">Shop our bakes</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features container fade-in">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="grid features__grid">
+      <article class="card">
+        <h3>Natural Ingredients</h3>
+        <p>No improvers or artificial preservatives — just flour, water, salt, and time.</p>
+      </article>
+      <article class="card">
+        <h3>Slow Fermentation</h3>
+        <p>48‑hour fermenting process for better flavour, texture, and aroma.</p>
+      </article>
+      <article class="card">
+        <h3>Daily Fresh</h3>
+        <p>We bake in small batches each morning so you get the freshest goods.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRODUCTS PREVIEW -->
+  <section class="container fade-in">
+    <h2 class="section-title">Customer Favourites</h2>
+    <div class="grid products__grid">
+      <article class="product">
+        <img src="images/muffins.jpg" alt="Sweet muffins" />
+        <h3>Sweet Muffins</h3>
+        <p class="price">R15.00</p>
+      </article>
+      <article class="product">
+        <img src="images/scones.jpg" alt="Crumbly scones" />
+        <h3>Crumbly Scones</h3>
+        <p class="price">R10.00</p>
+      </article>
+      <article class="product">
+        <img src="images/Red velvet cake slice.jpg" alt="Red velvet cake slice" />
+        <h3>Red Velvet Cake Slice</h3>
+        <p class="price">R40.00</p>
+      </article>
+      <article class="product">
+        <img src="images/Chocolate cake slice.jpg" alt="Chocolate cake slice" />
+        <h3>Chocolate Cake Slice</h3>
+        <p class="price">R35.00</p>
+      </article>
+    </div>
+    <p class="center mt"><a class="btn btn--outline" href="products.html">View all products</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        © <span id="year"></span> The Muffin & Scone Co.<br />
+        <span id="datetime" class="footer-datetime"></span><br />
+        Open Mon–Sat 7:00–17:00
+      </p>
+      <p>
+        <a href="mailto:hello@sweetrise.example">hello@sweetrise.example</a> · 
+        <a href="tel:+27123456789">+27 11 555 0123</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
