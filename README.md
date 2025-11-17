@@ -66,7 +66,7 @@ project-root/ │ ├── index.html ├── about.html ├── products.h
 3. Ensure the `css/` and `js/` folders are correctly linked in each HTML file.
 4. Interact with forms and cart to see dynamic functionality.
 
----
+
 
 ## 📌 Notes
 - Each page has its own JavaScript file for modularity.
