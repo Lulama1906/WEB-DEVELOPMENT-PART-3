@@ -51,7 +51,7 @@ project-root/ │ ├── index.html ├── about.html ├── products.h
 - Business hours list.
 - Contact form with validation and feedback messages.
 
----
+
 
 ## 🖥️ Technologies Used
 - **HTML5** for semantic structure.
